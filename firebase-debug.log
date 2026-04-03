@@ -1,0 +1,39 @@
+[debug] [2026-02-19T14:27:12.219Z] ----------------------------------------------------------------------
+[debug] [2026-02-19T14:27:12.221Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\HP\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js login --reauth
+[debug] [2026-02-19T14:27:12.221Z] CLI Version:   14.18.0
+[debug] [2026-02-19T14:27:12.221Z] Platform:      win32
+[debug] [2026-02-19T14:27:12.222Z] Node Version:  v22.16.0
+[debug] [2026-02-19T14:27:12.222Z] Time:          Thu Feb 19 2026 14:27:12 GMT+0000 (GMT)
+[debug] [2026-02-19T14:27:12.222Z] ----------------------------------------------------------------------
+[debug] 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://accounts.google.com/o/oauth2/auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&scope=email%20openid%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloudplatformprojects.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffirebase%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform&response_type=code&state=712137356&redirect_uri=http%3A%2F%2Flocalhost%3A9005&login_hint=abdullahialiyugarba14%40gmail.com
+[info] 
+[info] Waiting for authentication...
+[debug] [2026-02-19T14:28:07.909Z] >>> [apiv2][query] POST https://accounts.google.com/o/oauth2/token [none]
+[debug] [2026-02-19T14:28:07.911Z] >>> [apiv2][body] POST https://accounts.google.com/o/oauth2/token [omitted]
+[debug] [2026-02-19T14:28:29.480Z] *** [apiv2] error from fetch(https://accounts.google.com/o/oauth2/token, {"headers":{},"method":"POST","body":{"_overheadLength":543,"_valueLength":208,"_valuesToMeasure":[],"writable":false,"readable":true,"dataSize":0,"maxDataSize":2097152,"pauseStreams":true,"_released":true,"_streams":[],"_currentStream":null,"_insideLoop":false,"_pendingNext":false,"_boundary":"--------------------------21d3abd27d8d985b9a4d8a68","_events":{},"_eventsCount":1}}): FetchError: request to https://accounts.google.com/o/oauth2/token failed, reason: 
+[debug] [2026-02-19T14:28:29.481Z] Token Fetch Error: FirebaseError: Failed to make request to https://accounts.google.com/o/oauth2/token
+    at RetryOperation._fn (C:\Users\HP\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:261:31)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[error] Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2026-02-19T14:28:29.522Z] >>> [apiv2][query] POST https://auth.firebase.tools/attest [none]
+[debug] [2026-02-19T14:28:29.523Z] >>> [apiv2][body] POST https://auth.firebase.tools/attest {"session_id":"9eee6c99-6e28-4298-a4fc-00d3c7e525af"}
+[debug] [2026-02-19T14:28:30.604Z] <<< [apiv2][status] POST https://auth.firebase.tools/attest 200
+[debug] [2026-02-19T14:28:30.605Z] <<< [apiv2][body] POST https://auth.firebase.tools/attest {"token":"DePHCrVFE1FORRtlUa7qFYCsDCO3jUQVs_H1jWUfe70"}
+[info] 
+[info] To sign in to the Firebase CLI:
+[info] 
+[info] 1. Take note of your session ID:
+[info] 
+[info]    9EEE6
+[info] 
+[info] 2. Visit the URL below on any device and follow the instructions to get your code:
+[info] 
+[info]    https://auth.firebase.tools/login?code_challenge=wPayJsuxAIwZMpgjgYBHmQIy-Ag4IFuxTp2JTbG-q74&session=9eee6c99-6e28-4298-a4fc-00d3c7e525af&attest=DePHCrVFE1FORRtlUa7qFYCsDCO3jUQVs_H1jWUfe70
+[info] 
+[info] 3. Paste or enter the authorization code below once you have it:
+[info] 
