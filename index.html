@@ -1,50 +1,429 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Amrili Digital Services Limited</title>
-        <meta name="google-site-verification" content="HXWsdIJJrANznCuuHrLsfO1YBTZpDFTU6jnltvg40JM" />
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Amrili Digital Services Ltd - Technology that moves the world.">
-        <meta name="keywords" content="Technology, Software Development, Fintech, E-learning, Import Export, Nigeria">
-        <meta name="author" content="Amrili Digital Services Ltd">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="icon" href="images/favicon.png" type="image/png">
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-        </head>
-    <body>
-    <header><nav>
-    <div class="header-content">
-            <img src="amrilidigitalserviceslogo.png" alt="Amrili Digital Services Logo" class="logo" />
-            <div>
-                <h1>Amrili Digital Services Limited</h1>
-                <p class="tagline">RC: 9339018 | TIN:  2620587976724</p>
-            </div>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Amrili Digital Services Ltd">
+  <meta name="description" content="Amrili Digital Services Ltd — A Nigerian technology company delivering software development, digital marketplace platforms, and e-commerce solutions.">
+  <meta name="keywords" content="Software Development, Digital Marketplace, Mobile Applications, E-commerce Platform, Nigeria, Technology">
+  <meta property="og:title" content="Amrili Digital Services Limited">
+  <meta property="og:description" content="Technology that moves the world. Software development and digital platform solutions.">
+  <title>Amrili Digital Services Limited</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* ── Hero ── */
+    .hero {
+      min-height: 88vh;
+      display: flex;
+      align-items: center;
+      background: linear-gradient(135deg, #f0f4ff 0%, #e8eeff 50%, #f5f8ff 100%);
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      width: 600px; height: 600px;
+      background: radial-gradient(circle, rgba(26,86,219,.08) 0%, transparent 70%);
+      top: -100px; right: -100px;
+      pointer-events: none;
+    }
+    .hero::after {
+      content: '';
+      position: absolute;
+      width: 400px; height: 400px;
+      background: radial-gradient(circle, rgba(200,155,60,.06) 0%, transparent 70%);
+      bottom: -80px; left: 10%;
+      pointer-events: none;
+    }
+    .hero-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+    .hero-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: .82rem;
+      font-weight: 600;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 20px;
+    }
+    .hero-eyebrow::before {
+      content: '';
+      display: block;
+      width: 24px; height: 2px;
+      background: var(--accent);
+    }
+    .hero h1 {
+      font-size: clamp(2.4rem, 5vw, 3.8rem);
+      font-weight: 800;
+      margin-bottom: 24px;
+      letter-spacing: -.02em;
+    }
+    .hero h1 span { color: var(--accent); }
+    .hero-desc {
+      font-size: 1.1rem;
+      margin-bottom: 36px;
+      max-width: 480px;
+    }
+    .hero-actions { display: flex; gap: 16px; flex-wrap: wrap; }
+    .hero-visual {
+      position: relative;
+    }
+    .hero-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 32px;
+      box-shadow: 0 24px 80px rgba(26,86,219,.12);
+    }
+    .hero-card-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+    .hero-card-dot {
+      width: 12px; height: 12px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+    .hero-card-label {
+      font-family: 'Syne', sans-serif;
+      font-weight: 700;
+      font-size: .9rem;
+    }
+    .hero-stats {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+    .hero-stat {
+      background: var(--surface);
+      border-radius: 12px;
+      padding: 20px;
+    }
+    .hero-stat-num {
+      font-family: 'Syne', sans-serif;
+      font-size: 1.8rem;
+      font-weight: 800;
+      color: var(--accent);
+    }
+    .hero-stat-label { font-size: .82rem; color: var(--ink-soft); margin-top: 4px; }
+    .hero-float {
+      position: absolute;
+      top: -20px; right: -20px;
+      background: var(--accent);
+      color: var(--white);
+      border-radius: 16px;
+      padding: 16px 20px;
+      font-family: 'Syne', sans-serif;
+      font-weight: 700;
+      font-size: .85rem;
+      box-shadow: 0 8px 32px rgba(26,86,219,.30);
+    }
+
+    /* ── Trust Bar ── */
+    .trust-bar {
+      padding: 32px 0;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+    .trust-inner {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+    .trust-label {
+      font-size: .82rem;
+      font-weight: 600;
+      color: var(--ink-soft);
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      white-space: nowrap;
+    }
+    .trust-items {
+      display: flex;
+      gap: 32px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .trust-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: .88rem;
+      font-weight: 500;
+      color: var(--ink-soft);
+    }
+    .trust-item::before {
+      content: '✓';
+      width: 22px; height: 22px;
+      background: var(--accent);
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: .7rem;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+
+    /* ── How It Works ── */
+    .steps { counter-reset: steps; }
+    .step {
+      display: grid;
+      grid-template-columns: 56px 1fr;
+      gap: 24px;
+      padding: 32px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .step:last-child { border-bottom: none; }
+    .step-num {
+      width: 56px; height: 56px;
+      border-radius: 16px;
+      background: var(--accent);
+      color: var(--white);
+      font-family: 'Syne', sans-serif;
+      font-size: 1.2rem;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .step-body h3 { margin-bottom: 8px; }
+
+    /* ── CTA Section ── */
+    .cta-section {
+      background: var(--accent);
+      color: var(--white);
+      padding: 96px 0;
+      text-align: center;
+    }
+    .cta-section h2 { color: var(--white); margin-bottom: 16px; }
+    .cta-section p  { color: rgba(255,255,255,.8); margin-bottom: 40px; font-size: 1.1rem; }
+    .btn-white {
+      background: var(--white);
+      color: var(--accent);
+      font-family: 'Syne', sans-serif;
+      font-weight: 700;
+      padding: 16px 40px;
+      border-radius: 8px;
+      display: inline-block;
+      transition: var(--trans);
+    }
+    .btn-white:hover { transform: translateY(-2px); box-shadow: 0 8px 32px rgba(0,0,0,.15); }
+
+    @media (max-width: 768px) {
+      .hero-inner { grid-template-columns: 1fr; }
+      .hero-visual { display: none; }
+      .hero { min-height: auto; padding: 80px 0; }
+    }
+  </style>
+</head>
+<body>
+<script src="components.js"></script>
+
+<!-- ══ HERO ══════════════════════════════════════════════ -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-inner">
+      <div class="hero-content">
+        <div class="hero-eyebrow">Nigerian Technology Company</div>
+        <h1>Technology That <span>Moves</span> The World</h1>
+        <p class="hero-desc">
+          We build software, digital platforms, and marketplace infrastructure that empowers businesses and communities across Nigeria and beyond.
+        </p>
+        <div class="hero-actions">
+          <a href="services.html" class="btn btn-primary">Explore Services</a>
+          <a href="contact.html"  class="btn btn-outline">Get In Touch</a>
         </div>
-    <span class="menu-toggle">&#9776;</span>
-<ul><li><a href="index.html">Home</a></li><li><a href="services.html">Services</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul></nav></header>
-<section class="hero"><h1>Technology That Moves The World</h1><p>Innovating for a better tomorrow</p><a href="services.html" class="btn">Explore Services</a></section>
-<section><h2 style="text-align:center;">Why Choose Us</h2><div class="features"><div class="feature-card"><i class="fas fa-lightbulb"></i><h3>Innovation</h3><p>Creative solutions for your business needs.</p></div><div class="feature-card"><i class="fas fa-user-shield"></i><h3>Reliability</h3><p>Trusted by clients worldwide for secure services.</p></div><div class="feature-card"><i class="fas fa-globe"></i><h3>Global Reach</h3><p>Expanding technology across continents.</p></div></div></section>
-<section>
-    <h2 style="text-align:center;">What Our Clients Say</h2>
-    <div class="testimonials"><div class="testimonial-card">
-        <p>"Top-notch services!"</p><h4>- John Abraham</h4>
-    </div><div class="testimonial-card">
-        <p>"Reliable and innovative solutions."</p>
-        <h4>- Farouq Jamil</h4></div></div></section>
-<footer>
-<div class="social-icons">
-<a href="#"><i class="fab fa-facebook-f"></i></a>
-<a href="#"><i class="fab fa-twitter"></i></a>
-<a href="#"><i class="fab fa-linkedin-in"></i></a>
-<a href="#"><i class="fab fa-instagram"></i></a>
-</div>
-<div class="quick-links">
-<a href="privacy.html">Privacy</a> | 
-<a href="terms.html">Terms</a> | <a href="refund.html">Refund Policy</a> | <a href="blog.html">Blog</a>
-</div>
-<p>&copy; 2025 Amrili Digital Services Ltd. All rights reserved.</p>
-</footer>
-<script src="js/script.js"></script>
-</body></html>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-float">🚀 Built in Nigeria</div>
+        <div class="hero-card">
+          <div class="hero-card-header">
+            <div class="hero-card-dot"></div>
+            <div class="hero-card-label">Amrili Platform Overview</div>
+          </div>
+          <div class="hero-stats">
+            <div class="hero-stat">
+              <div class="hero-stat-num">3+</div>
+              <div class="hero-stat-label">Products in Development</div>
+            </div>
+            <div class="hero-stat">
+              <div class="hero-stat-num">100%</div>
+              <div class="hero-stat-label">Nigerian Owned</div>
+            </div>
+            <div class="hero-stat">
+              <div class="hero-stat-num">CAC</div>
+              <div class="hero-stat-label">Registered Company</div>
+            </div>
+            <div class="hero-stat">
+              <div class="hero-stat-num">2026</div>
+              <div class="hero-stat-label">Incorporated</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ TRUST BAR ══════════════════════════════════════════ -->
+<section class="trust-bar">
+  <div class="container">
+    <div class="trust-inner">
+      <span class="trust-label">Verified &amp; Compliant</span>
+      <div class="trust-items">
+        <span class="trust-item">CAC Registered — RC 9339018</span>
+        <span class="trust-item">TIN Verified — 2620587976724</span>
+        <span class="trust-item">Nigerian Owned &amp; Operated</span>
+        <span class="trust-item">Secure Payment Integration</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ WHAT WE DO ══════════════════════════════════════════ -->
+<section class="section">
+  <div class="container">
+    <div class="text-center">
+      <span class="section-label">What We Do</span>
+      <h2 class="section-title">Digital Solutions for the Modern World</h2>
+      <p class="section-sub">
+        From custom software to full-scale digital marketplaces — we design, build, and deploy technology products that create real value.
+      </p>
+    </div>
+    <div class="grid-3">
+      <div class="card">
+        <div class="card-icon">💻</div>
+        <h3>Software Development</h3>
+        <p>Custom web and mobile applications built to solve specific business problems. We develop scalable, maintainable software using modern frameworks.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🛒</div>
+        <h3>Digital Marketplace Platform</h3>
+        <p>End-to-end marketplace infrastructure enabling businesses and individuals to buy, sell, and transact online — securely and efficiently.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">📱</div>
+        <h3>Mobile Application Development</h3>
+        <p>Native and cross-platform mobile apps with intuitive UX design, built for both Android and iOS with performance-first architecture.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🔗</div>
+        <h3>System Integration</h3>
+        <p>Connecting your existing tools and platforms through API integrations, third-party services, and automated workflows.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">☁️</div>
+        <h3>Cloud &amp; Infrastructure</h3>
+        <p>Cloud architecture, deployment pipelines, and infrastructure management to keep your digital products fast and reliable.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🛡️</div>
+        <h3>IT Consulting</h3>
+        <p>Strategic technology consulting to help businesses make the right decisions about digital transformation, tools, and architecture.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ HOW WE WORK ══════════════════════════════════════════ -->
+<section class="section section--alt">
+  <div class="container">
+    <div class="grid-2" style="align-items:start; gap:80px;">
+      <div>
+        <span class="section-label">Our Process</span>
+        <h2 class="section-title">How We Deliver</h2>
+        <p class="section-sub" style="margin-bottom:0;">
+          A straightforward, transparent process that keeps you informed and in control from the first conversation to final deployment.
+        </p>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">01</div>
+          <div class="step-body">
+            <h3>Discovery &amp; Requirements</h3>
+            <p>We learn your business goals, audience, and technical requirements before writing a single line of code.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">02</div>
+          <div class="step-body">
+            <h3>Design &amp; Architecture</h3>
+            <p>We plan the system architecture and create UI/UX designs that are reviewed and approved by you.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">03</div>
+          <div class="step-body">
+            <h3>Development &amp; Testing</h3>
+            <p>Agile development with regular progress updates, thorough testing, and quality assurance at every stage.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">04</div>
+          <div class="step-body">
+            <h3>Deployment &amp; Support</h3>
+            <p>We deploy, monitor, and provide ongoing support to ensure your product performs reliably in production.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ WHY CHOOSE US ══════════════════════════════════════════ -->
+<section class="section">
+  <div class="container">
+    <div class="text-center">
+      <span class="section-label">Why Amrili</span>
+      <h2 class="section-title">Built Different, Built Right</h2>
+      <p class="section-sub">We are a lean, focused team that takes pride in building things properly the first time.</p>
+    </div>
+    <div class="grid-4">
+      <div style="text-align:center; padding:24px;">
+        <div style="font-size:2rem; margin-bottom:12px;">🎯</div>
+        <h3 style="font-size:1rem; margin-bottom:8px;">Focused Expertise</h3>
+        <p style="font-size:.88rem;">We do software. We do it well. No distraction, no dilution.</p>
+      </div>
+      <div style="text-align:center; padding:24px;">
+        <div style="font-size:2rem; margin-bottom:12px;">🤝</div>
+        <h3 style="font-size:1rem; margin-bottom:8px;">Transparent Partnership</h3>
+        <p style="font-size:.88rem;">Clear communication, honest timelines, and no surprises.</p>
+      </div>
+      <div style="text-align:center; padding:24px;">
+        <div style="font-size:2rem; margin-bottom:12px;">🏛️</div>
+        <h3 style="font-size:1rem; margin-bottom:8px;">Fully Registered</h3>
+        <p style="font-size:.88rem;">CAC-registered Nigerian company with verified credentials.</p>
+      </div>
+      <div style="text-align:center; padding:24px;">
+        <div style="font-size:2rem; margin-bottom:12px;">⚡</div>
+        <h3 style="font-size:1rem; margin-bottom:8px;">Modern Stack</h3>
+        <p style="font-size:.88rem;">Current frameworks and best practices — nothing outdated.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CTA ══════════════════════════════════════════════════ -->
+<section class="cta-section">
+  <div class="container">
+    <h2>Ready to Build Something?</h2>
+    <p>Tell us about your project and we will get back to you within 24 hours.</p>
+    <a href="contact.html" class="btn-white">Start a Conversation</a>
+  </div>
+</section>
+
+</body>
+</html>

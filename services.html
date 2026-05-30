@@ -1,75 +1,245 @@
-<!DOCTYPE html><html><head><title>Our Services</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Millah Dynamics Ltd - Technology that moves the world.">
-<meta name="keywords" content="Technology, Software Development, Fintech, E-learning, Import Export, Nigeria">
-<meta name="author" content="Millah Dynamics Ltd">
-<link rel="stylesheet" href="css/style.css">
-<link rel="icon" href="images/favicon.png" type="image/png">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-</head><body>
-<header><nav>
-    <div class="header-content">
-            <img src="amrilidigitalserviceslogo.png" alt="Amrili Digital Services Logo" class="logo" />
-            <div>
-                <h1>Amrili Digital Services Limited</h1>
-                <p class="tagline">RC: 9339018 | TIN:  2620587976724</p>
-            </div>
-        </div>
-    <span class="menu-toggle">&#9776;</span><ul><li><a href="index.html">Home</a></li><li><a href="services.html">Services</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul></nav></header>
-<section><h2 style="text-align:center;">Our Services</h2>
-    <div class="services-grid"><div class="service-card"><i class="fas fa-code">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Amrili Digital Services Ltd">
+  <meta name="description" content="Software development, digital marketplace platforms, mobile applications, and IT consulting services by Amrili Digital Services Ltd, Nigeria.">
+  <meta name="keywords" content="Software Development, Digital Marketplace, Mobile Applications, IT Consulting, E-commerce Platform, Nigeria Technology">
+  <title>Our Services — Amrili Digital Services Limited</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .service-hero-icon {
+      width: 72px; height: 72px;
+      background: linear-gradient(135deg,#e8f0fe,#d0e2ff);
+      border-radius: 20px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 2rem;
+      margin-bottom: 24px;
+    }
+    .service-block {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: center;
+      padding: 72px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .service-block:last-child { border-bottom: none; }
+    .service-block.reverse { direction: rtl; }
+    .service-block.reverse > * { direction: ltr; }
+    .service-block ul {
+      list-style: none;
+      margin: 20px 0 28px;
+    }
+    .service-block ul li {
+      display: flex; align-items: flex-start; gap: 10px;
+      margin-bottom: 10px;
+      color: var(--ink-soft);
+      font-size: .95rem;
+    }
+    .service-block ul li::before {
+      content: '→';
+      color: var(--accent);
+      font-weight: 700;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .service-visual {
+      background: linear-gradient(135deg, #f0f4ff 0%, #e8eeff 100%);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 48px 40px;
+      text-align: center;
+    }
+    .service-visual .icon-large { font-size: 5rem; margin-bottom: 16px; }
+    .service-visual p {
+      font-size: .9rem;
+      font-style: italic;
+      color: var(--ink-soft);
+    }
+    .tech-tag {
+      display: inline-block;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 4px 12px;
+      font-size: .78rem;
+      font-weight: 500;
+      color: var(--ink-soft);
+      margin: 3px;
+    }
+    .tech-row { margin-top: 16px; }
+    @media (max-width: 768px) {
+      .service-block { grid-template-columns: 1fr; direction: ltr; gap: 32px; }
+      .service-block.reverse { direction: ltr; }
+    }
+  </style>
+</head>
+<body>
+<script src="components.js"></script>
 
-    </i><h3>Software Development</h3></div><div class="service-card">
-        <i class="fas fa-money-check-alt"></i><h3>FinTech Solutions</h3>
-    </div><div class="service-card"><i class="fas fa-chalkboard-teacher"></i>
-        <h3>E-Learning</h3></div><div class="service-card"><i class="fas fa-truck">
-
-        </i><h3>Import & Export</h3></div><div class="service-card">
-            <i class="fas fa-cloud"></i><h3>Cloud Solutions</h3>
-        </div></div></section>
-
- <section>
-  <h2>Our Projects</h2>
-  <p>Some of our proudly developed applications:</p>
-  <div class="project-grid">
-    <div class="project-card">
-      <img src="numberonemistake.jpg" alt="App 1" class="app">
-      <img src="numberone.jpg" alt="App 1" class="app">
-      <img src="numbertwo.jpg" alt="App 1" class="app">
-       <img src="numberthree.jpg" alt="App 2" class="app">
-       <img src="lastevery.jpg" alt="App 1" class="app">
-       <img src="every.jpg" alt="App 2" class="app">
-      <p class="caption">Fintech App</p>
-    </div>
-    <div class="project-card">
-     
-      <img src="numberfour.jpg" alt="App 2" class="app">
-      <img src="numberfive.jpg" alt="App 2" class="app">
-      <img src="numbersix.jpg" alt="App 2" class="app">
-      <img src="numberseven.jpg" alt="App 2" class="app">
-      <img src="numbereight.jpg" alt="App 2" class="app">
-      <img src="lastsmart.jpg" alt="App 2" class="app">
-      <p class="caption">Budgetting App</p>
-    </div>
-  
-    <!-- Add more cards as needed -->
+<!-- ══ PAGE HERO ══════════════════════════════════════════ -->
+<section class="page-hero">
+  <div class="container">
+    <span class="section-label">What We Offer</span>
+    <h1>Our Services</h1>
+    <p>End-to-end technology services — from ideation and design to development, deployment, and ongoing support.</p>
   </div>
 </section>
 
-<footer>
-<div class="social-icons">
-<a href="#"><i class="fab fa-facebook-f"></i></a>
-<a href="#"><i class="fab fa-twitter"></i></a>
-<a href="#"><i class="fab fa-linkedin-in"></i></a>
-<a href="#"><i class="fab fa-instagram"></i></a>
-</div>
-<div class="quick-links">
-<a href="privacy.html">Privacy</a> | 
-<a href="terms.html">Terms</a> | <a href="refund.html">Refund Policy</a> | <a href="blog.html">Blog</a>
-</div>
-<p>&copy; 2026 Amrili Digital Services Ltd. All rights reserved.</p>
-</footer>
-<script src="js/script.js"></script>
-</body></html>
+<!-- ══ SERVICES ══════════════════════════════════════════ -->
+<section class="section">
+  <div class="container">
+
+    <!-- 1. Software Development -->
+    <div class="service-block">
+      <div>
+        <div class="service-hero-icon">💻</div>
+        <span class="section-label">Core Service</span>
+        <h2>Software Development</h2>
+        <div class="divider"></div>
+        <p>We design and build custom software applications tailored to your specific business requirements. Our development process emphasizes clean architecture, maintainability, and performance.</p>
+        <ul>
+          <li>Custom web application development</li>
+          <li>Backend systems and REST API development</li>
+          <li>Database design and optimization</li>
+          <li>Progressive Web Apps (PWA)</li>
+          <li>SaaS platform development</li>
+          <li>Admin dashboards and management systems</li>
+        </ul>
+        <div class="tech-row">
+          <span class="tech-tag">Node.js</span>
+          <span class="tech-tag">React</span>
+          <span class="tech-tag">Python</span>
+          <span class="tech-tag">PostgreSQL</span>
+          <span class="tech-tag">MongoDB</span>
+          <span class="tech-tag">REST APIs</span>
+        </div>
+      </div>
+      <div class="service-visual">
+        <div class="icon-large">🖥️</div>
+        <p>"From concept to production-ready software"</p>
+      </div>
+    </div>
+
+    <!-- 2. Digital Marketplace -->
+    <div class="service-block reverse">
+      <div>
+        <div class="service-hero-icon">🛒</div>
+        <span class="section-label">Platform Product</span>
+        <h2>Digital Marketplace Platform</h2>
+        <div class="divider"></div>
+        <p>We build and operate digital marketplace infrastructure enabling businesses and individuals to list, discover, and transact products and services online — with built-in seller verification, order management, and secure payment processing.</p>
+        <ul>
+          <li>Multi-vendor marketplace architecture</li>
+          <li>Seller onboarding and KYC verification</li>
+          <li>Product catalogue and inventory management</li>
+          <li>Order tracking and fulfillment workflows</li>
+          <li>Secure payment collection via licensed gateways</li>
+          <li>QR-based product discovery and ordering</li>
+          <li>Commission-based revenue model</li>
+        </ul>
+        <div class="tech-row">
+          <span class="tech-tag">Paystack</span>
+          <span class="tech-tag">OPay Checkout</span>
+          <span class="tech-tag">KYC API</span>
+          <span class="tech-tag">Real-time Notifications</span>
+        </div>
+      </div>
+      <div class="service-visual">
+        <div class="icon-large">🏪</div>
+        <p>"A marketplace ecosystem connecting buyers and verified sellers"</p>
+      </div>
+    </div>
+
+    <!-- 3. Mobile Applications -->
+    <div class="service-block">
+      <div>
+        <div class="service-hero-icon">📱</div>
+        <span class="section-label">Mobile First</span>
+        <h2>Mobile Application Development</h2>
+        <div class="divider"></div>
+        <p>We develop native and cross-platform mobile applications with intuitive user experiences, focusing on performance, reliability, and offline capability for the Nigerian mobile environment.</p>
+        <ul>
+          <li>Android and iOS application development</li>
+          <li>Cross-platform development (React Native / Flutter)</li>
+          <li>Social features and community functionality</li>
+          <li>Push notifications and real-time messaging</li>
+          <li>In-app payment integration</li>
+          <li>App Store and Google Play deployment</li>
+        </ul>
+        <div class="tech-row">
+          <span class="tech-tag">React Native</span>
+          <span class="tech-tag">Flutter</span>
+          <span class="tech-tag">Firebase</span>
+          <span class="tech-tag">WebSockets</span>
+          <span class="tech-tag">Push Notifications</span>
+        </div>
+      </div>
+      <div class="service-visual">
+        <div class="icon-large">📲</div>
+        <p>"Mobile-first products built for Nigerian users"</p>
+      </div>
+    </div>
+
+    <!-- 4. System Integration -->
+    <div class="service-block reverse">
+      <div>
+        <div class="service-hero-icon">🔗</div>
+        <span class="section-label">Integration</span>
+        <h2>System Integration &amp; API Development</h2>
+        <div class="divider"></div>
+        <p>We connect your platforms, tools, and third-party services through robust API integrations, creating seamless workflows that reduce manual effort and improve operational efficiency.</p>
+        <ul>
+          <li>Payment gateway integration (Paystack, OPay, Flutterwave)</li>
+          <li>Third-party API integration and management</li>
+          <li>Utility service provider APIs (VTpass, etc.)</li>
+          <li>CRM and ERP system integration</li>
+          <li>Webhook management and event-driven architecture</li>
+          <li>Legacy system modernization</li>
+        </ul>
+      </div>
+      <div class="service-visual">
+        <div class="icon-large">⚙️</div>
+        <p>"Connecting your tools into one cohesive system"</p>
+      </div>
+    </div>
+
+    <!-- 5. IT Consulting -->
+    <div class="service-block">
+      <div>
+        <div class="service-hero-icon">🛡️</div>
+        <span class="section-label">Advisory</span>
+        <h2>IT Consulting</h2>
+        <div class="divider"></div>
+        <p>Strategic technology advice for businesses making important decisions about digital transformation, architecture, tooling, and vendor selection. We help you avoid costly mistakes before they happen.</p>
+        <ul>
+          <li>Technology stack assessment and recommendation</li>
+          <li>Digital transformation strategy</li>
+          <li>Software architecture review</li>
+          <li>Vendor and platform evaluation</li>
+          <li>Security posture review</li>
+          <li>Compliance and technical documentation</li>
+        </ul>
+      </div>
+      <div class="service-visual">
+        <div class="icon-large">🎯</div>
+        <p>"Right technology decisions from the start"</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══ CTA ══════════════════════════════════════════════════ -->
+<section class="cta-section">
+  <div class="container">
+    <h2>Have a Project in Mind?</h2>
+    <p>Describe what you need and we will tell you honestly whether and how we can help.</p>
+    <a href="contact.html" class="btn-white">Talk to Us</a>
+  </div>
+</section>
+
+</body>
+</html>
