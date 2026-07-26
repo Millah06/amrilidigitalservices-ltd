@@ -56,9 +56,10 @@ document.addEventListener('DOMContentLoaded', function () {
       <div>
         <h4>Contact</h4>
         <ul>
-          <li><a href="mailto:info@amrilidigitalservices.com">info@amrilidigitalservices.com</a></li>
-          <li><a href="tel:+2348087798514">+234 808 779 8514</a></li>
-          <li>006, Inuwa Dahiru Road,<br>Azare, Bauchi State, Nigeria</li>
+          <li><a href="mailto:support@amril.app">support@amril.app</a></li>
+          <li><a href="tel:+8613248938580">+86 13248938580</a></li>
+          <li><a href="tel:+8613248938581">+86 13248938581</a></li>
+          <li>Inuwa Dahiru Road,<br>Azare, Bauchi State, Nigeria</li>
         </ul>
       </div>
     </div>
